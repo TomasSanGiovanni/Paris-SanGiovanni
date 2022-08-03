@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0; 
+    box-sizing: content-box;   
+    box-sizing: border-box;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../imagen/descarga3.jpg);
+  background-size: cover;
+  background-position: center;
+  /*background-image:linear-gradient(to top,rgba(0, 0, 0, 0.925) 0,rgba(0,0,0,0) 60%,rgba(0, 0, 0, 0.925) 100%);
+*/
+}
+.Grid{
+  display:grid;
+  grid-template-areas: 
+  "header header header"
+  "section section section"
+  "footer footer footer";
+  grid-template-rows:0.2fr 2.6fr 0.2fr ;
+  grid-template-columns: auto  auto auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  gap:20px 10px;
+  min-height: 100vh;
+  
+  }
+  .Menu{  
+      width: 100%;
+      height: 170px;
+      grid-area: header;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      padding: bottom 15%; ;
+      z-index:10;
+      text-align: right;
+      background:rgba(0,0,0,0.6);
+      box-shadow: 0px 2px 2px rgb(0, 0,0,0,2);
+    }
+
+    .Menu__Logo{
+      padding-top: 10px;
+      padding-bottom: 30px;
+      padding-left: 10px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    .Menu_Logo_Cont{
+      font-family: 'Josefin Sans', sans-serif;
+      color:#d491a1;
+      font-size: 20px;
+      font-weight: bolder;
+      text-align:left;
+      margin-top: auto;
+      margin-bottom: auto;
+      text-decoration: none;
+    }
+    
+    .Menu__Link{        
+       display:inline-block; 
+       text-decoration: none;
+        font-size: 20px;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin: 1%;
+        color: #0B0D56;
+        background-color:#d491a1 ;
+        border-style:double;
+      }
+    
+    .Contenido{
+      width: 100%;
+      grid-area: section;
+      
+    }
+    .Contenido__Card{
+      width: 100%;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
+    }
+    .Contenido__Card__Index{
+    width: 430px;
+    height: 530px;
+    border-radius: 8px;
+    background-color:#d491a1;
+    box-shadow: 0px 2px 2px rgb(0, 0,0,0,2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+    .Contenido__Card__Index:hover{
+    box-shadow: 5px 5px 20px rgb(0,0,0,0.4);
+    transform: translateY(-3%);
+    }
+    .Contenido__Card__Index p{
+      font-size: 15px;
+      font-weight: bolder;
+      font-family: 'Josefin Sans', sans-serif;
+      color: #0B0D56;
+    }
+    .Contenido__Card__Index img{
+      width: 200px;
+      height: 200px;
+      
+    }
+    .section_Generos{
+ 
+      grid-area: section;
+      display:flex;
+      flex-direction: column;    
+  }
+  .Titulo__Secciones{
+      font-size: 70px;
+      margin-top: 5px;
+      margin-left: 5px;
+  }
+  .Contenedor__Generos{
+      width: 100%;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
+      
+  }
+  
+  .Card__Generos{
+      width:320px;
+      height: 600px;
+      border-radius: 8px;
+      background-color:#0B0D56;
+      box-shadow: 0px 2px 2px rgb(0, 0,0,0,2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 20px;
+      /*cursor:default;*/
+      text-align: center;
+      transition: all 0.25s;
+  }
+  .Card__Generos:hover{
+      box-shadow: 5px 5px 20px rgb(0,0,0,0.4);
+      transform: translateY(-3%);
+      
+  
+  }
+  .Card__Generos{
+      text-align: center;
+      padding: 2px;
+  
+  }
+  .Card__Generos img{
+      width: 300px;
+      height:300px;
+  }
+  .Card__Generos h3{
+      font-size: 23px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: bolder;
+  
+  }
+  .Card__Generos p{
+      font-size: 20px;
+      color: #6a6a6a;
+      margin-top: 20px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: bolder;
+      
+
+  }
+  .Contenedor__Card__carrito{
+      text-decoration: none;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 25px;  
+      background-color: rgba(241, 171, 195, 0);
+      color:#d491a1;
+      padding: 15px;
+      justify-content: center;
+    
+  }
+  .Contenedor__Formulario{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+   
+  }
+  .Card__CompraOnline{
+    width: 800px;
+    height: 600px;
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgb(0,0,0,0.4);
+    border-radius: 8px;
+    margin-left: 20px;
+    justify-content: center;
+  }
+  .Caja__Formulario{
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+  }
+  .Contenedor__Formulario__Texto{
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #d491a1;
+    font-weight: bolder;
+    text-align: justify;
+    margin-top: 10px;
+    padding-top: 10px;
+
+  }
+  
+  .Contenedor__Formulario__Caja{
+    width: 98%;
+    height: 300px;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    color:#d491a1 ;
+    background-color: #0B0D56;
+  }
+  
+  
+  .Contenedor__Formulario__Ingresos{
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #d491a1;
+    background-color: #0B0D56;
+  }
+    .footer{
+      grid-area: footer;
+      width: 100%;
+      background:rgba(0,0,0,0.6);
+      box-shadow: 0px 2px 2px rgb(0, 0,0,0,2);
+      height: 170px;
+  }
+  .Container___Footer{
+ 
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .row__Footer{
+       display: flex;
+       flex-wrap: wrap;
+       justify-items: center;
+       text-align: center;
+       align-content: center;
+       justify-content: space-evenly;
+       padding-top: 10px;
+       
+   }
+   /*.col__Footer{
+       width: 25%;
+       padding:0 15px;
+      
+   }*/
+   .Footer__titulo{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 25px;
+      color: rosybrown;
+      margin-bottom: 30px;
+   }
+   .Footer__link{
+       font-family: 'Josefin Sans', sans-serif;
+       text-decoration:none;
+       font-size: 18px;
+       border-style: double;
+       background-color: #d491a1;
+       padding-left: 2px;
+       padding-left: 2px;
+       color: #0B0D56;
+        
+   }
+@media screen and (max-width:768px){
+.Menu{
+  width: 100%;
+  height: 15rem;
+}
+.Menu_Logo_Cont{
+  text-align: center;
+  font-size: 15px;
+}
+.Menu__Link{
+display: block;
+width: 10rem;
+text-align: center;
+font-size: 15px;
+}
+.Titulo__Secciones{
+  font-size: 2rem;
+}
+.Card__Generos{
+  width: 200px; 
+  height: 310px;
+  margin: 4px;
+  justify-content: space-evenly;
+}
+.Card__Generos h3{
+  font-size: 12px;
+}
+.Card__Generos img{
+  width: 55%;
+  height: 120px;
+}
+.Card__Generos p{
+  font-size: 12px;
+}
+.Contenedor__Card__carrito{
+  font-size: 12px;
+}
+.Card__CompraOnline{
+  width: 400px;
+  height: 400;
+}
+.Contenedor__Formulario__Texto{
+  font-size: 18px;
+}
+.Contenedor__Formulario__Ingresos{
+  font-size: 15px;
+}
+}
