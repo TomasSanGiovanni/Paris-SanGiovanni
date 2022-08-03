@@ -10,9 +10,10 @@
 body{
   width: 100%;
   min-height: 100vh;
-  background-image: url(../imagen/descarga3.jpg);
+  background-image: url('../imagen/descarga3.jpg');
   background-size: cover;
   background-position: center;
+  font-family: 'Josefin Sans', sans-serif;
   /*background-image:linear-gradient(to top,rgba(0, 0, 0, 0.925) 0,rgba(0,0,0,0) 60%,rgba(0, 0, 0, 0.925) 100%);
 */
 }
@@ -48,10 +49,9 @@ body{
       padding-top: 10px;
       padding-bottom: 30px;
       padding-left: 10px;
-      font-family: 'Josefin Sans', sans-serif;
+      
     }
     .Menu_Logo_Cont{
-      font-family: 'Josefin Sans', sans-serif;
       color:#d491a1;
       font-size: 20px;
       font-weight: bolder;
@@ -65,12 +65,18 @@ body{
        display:inline-block; 
        text-decoration: none;
         font-size: 20px;
-        padding-left: 1%;
-        padding-right: 1%;
+       /* padding-left: 1%;
+        padding-right: 1%;*/
+        padding: 10px;
         margin: 1%;
         color: #0B0D56;
         background-color:#d491a1 ;
         border-style:double;
+      }
+      .Menu__Link:hover{
+        transform: translateY(-3%) ;
+        background-color: #0B0D56;
+        color: #d491a1;
       }
     
     .Contenido{
@@ -106,9 +112,9 @@ body{
     .Contenido__Card__Index p{
       font-size: 15px;
       font-weight: bolder;
-      font-family: 'Josefin Sans', sans-serif;
       color: #0B0D56;
     }
+   
     .Contenido__Card__Index img{
       width: 200px;
       height: 200px;
@@ -166,22 +172,19 @@ body{
   }
   .Card__Generos h3{
       font-size: 23px;
-      font-family: 'Josefin Sans', sans-serif;
       font-weight: bolder;
   
   }
   .Card__Generos p{
       font-size: 20px;
       color: #6a6a6a;
-      margin-top: 20px;
-      font-family: 'Josefin Sans', sans-serif;
+      margin-top: 20px;      
       font-weight: bolder;
       
 
   }
   .Contenedor__Card__carrito{
       text-decoration: none;
-      font-family: 'Josefin Sans', sans-serif;
       font-size: 25px;  
       background-color: rgba(241, 171, 195, 0);
       color:#d491a1;
@@ -216,7 +219,6 @@ body{
   }
   .Contenedor__Formulario__Texto{
     font-size: 30px;
-    font-family: 'Josefin Sans', sans-serif;
     color: #d491a1;
     font-weight: bolder;
     text-align: justify;
@@ -229,7 +231,6 @@ body{
     width: 98%;
     height: 300px;
     font-size: 30px;
-    font-family: 'Josefin Sans', sans-serif;
     padding-left: 10px;
     padding-top: 10px;
     color:#d491a1 ;
@@ -240,7 +241,6 @@ body{
   .Contenedor__Formulario__Ingresos{
     font-size: 20px;
     padding: 5px;
-    font-family: 'Josefin Sans', sans-serif;
     color: #d491a1;
     background-color: #0B0D56;
   }
@@ -265,6 +265,7 @@ body{
        align-content: center;
        justify-content: space-evenly;
        padding-top: 10px;
+      
        
    }
    /*.col__Footer{
@@ -273,21 +274,26 @@ body{
       
    }*/
    .Footer__titulo{
-      font-family: 'Josefin Sans', sans-serif;
       font-size: 25px;
       color: rosybrown;
       margin-bottom: 30px;
    }
    .Footer__link{
-       font-family: 'Josefin Sans', sans-serif;
        text-decoration:none;
+       list-style: none;
        font-size: 18px;
        border-style: double;
        background-color: #d491a1;
-       padding-left: 2px;
-       padding-left: 2px;
+       
+       margin-top: 10px;
+       padding: 10px;
        color: #0B0D56;
         
+   }
+   .row__Footer a{
+    text-decoration: none;
+    padding-left: 2px;
+    padding-right: 2px;
    }
 @media screen and (max-width:768px){
 .Menu{
@@ -303,6 +309,7 @@ display: block;
 width: 10rem;
 text-align: center;
 font-size: 15px;
+padding: 1px;
 }
 .Titulo__Secciones{
   font-size: 2rem;
