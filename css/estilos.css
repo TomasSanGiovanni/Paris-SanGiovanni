@@ -10,7 +10,7 @@
 body{
   width: 100%;
   min-height: 100vh;
-    background-image: url(../imagen/descarga3.jpg');
+    background-image: url('../imagen/descarga3.jpg');
     background-size: cover;
     background-position: center;
     
@@ -260,7 +260,7 @@ body{
     color: #d491a1;
     background-color: #0B0D56;
   }
-    .footer{
+    /*.footer{
       grid-area: footer;
       width: 100%;
       background:rgba(0,0,0,0.6);
@@ -288,7 +288,7 @@ body{
        width: 25%;
        padding:0 15px;
       
-   }*/
+   }
    .Footer__titulo{
       font-size: 25px;
       color: rosybrown;
@@ -310,7 +310,7 @@ body{
     text-decoration: none;
     padding-left: 2px;
     padding-right: 2px;
-   }
+   }*/
 @media screen and (max-width:768px){
 .Menu{
   width: 100%;
