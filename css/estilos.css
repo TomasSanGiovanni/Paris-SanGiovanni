@@ -10,7 +10,7 @@
 body{
   width: 100%;
   min-height: 100vh;
-    background-image: url('../imagen/descarga3.jpg');
+    background-image: url(../imagen/descarga3.jpg');
     background-size: cover;
     background-position: center;
     
@@ -92,7 +92,7 @@ body{
         margin: auto;
         height: 40rem;
       }
-
+    
     .Contenido{
       width: 100%;
       grid-area: section;
