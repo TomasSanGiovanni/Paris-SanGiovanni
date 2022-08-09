@@ -10,14 +10,15 @@
 body{
   width: 100%;
   min-height: 100vh;
-  background-image: url('../imagen/descarga3.jpg');
-  background-size: cover;
-  background-position: center;
+    background-image: url('../imagen/descarga3.jpg');
+    background-size: cover;
+    background-position: center;
+    
   font-family: 'Josefin Sans', sans-serif;
   /*background-image:linear-gradient(to top,rgba(0, 0, 0, 0.925) 0,rgba(0,0,0,0) 60%,rgba(0, 0, 0, 0.925) 100%);
 */
 }
-.Grid{
+/*.Grid{
   display:grid;
   grid-template-areas: 
   "header header header"
@@ -30,7 +31,7 @@ body{
   gap:20px 10px;
   min-height: 100vh;
   
-  }
+  }*/
   .Menu{  
       width: 100%;
       height: 170px;
@@ -41,11 +42,13 @@ body{
       padding: bottom 15%; ;
       z-index:10;
       text-align: right;
-      background:rgba(0,0,0,0.6);
+     /* background:rgba(0,0,0,0.6);*/
       box-shadow: 0px 2px 2px rgb(0, 0,0,0,2);
     }
 
     .Menu__Logo{
+      width: 100%;
+      background:rgba(0,0,0,0.6);
       padding-top: 10px;
       padding-bottom: 30px;
       padding-left: 10px;
@@ -55,36 +58,48 @@ body{
       color:#d491a1;
       font-size: 20px;
       font-weight: bolder;
-      text-align:left;
+      text-align:center;
       margin-top: auto;
       margin-bottom: auto;
       text-decoration: none;
     }
     
-    .Menu__Link{        
+    /*.Menu__Link{        
        display:inline-block; 
        text-decoration: none;
         font-size: 20px;
-       /* padding-left: 1%;
-        padding-right: 1%;*/
+        padding-left: 1%;
+        padding-right: 1%;
         padding: 10px;
         margin: 1%;
         color: #0B0D56;
         background-color:#d491a1 ;
         border-style:double;
-      }
-      .Menu__Link:hover{
+      }*/
+      /*.Menu__Link:hover{
         transform: translateY(-3%) ;
         background-color: #0B0D56;
         color: #d491a1;
+      }*/
+      .Texto_inicio{
+        width: 50%;
+        text-align: center;
+        color: #d491a1;
+        margin: auto;
+        padding-bottom: 5rem;
       }
-    
+      .d-block{
+        margin: auto;
+        height: 40rem;
+      }
+
     .Contenido{
       width: 100%;
       grid-area: section;
+      margin-bottom: 5rem;
       
     }
-    .Contenido__Card{
+    /*.Contenido__Card{
       width: 100%;
       display:flex;
       flex-wrap: wrap;
@@ -119,7 +134,7 @@ body{
       width: 200px;
       height: 200px;
       
-    }
+    }*/
     .section_Generos{
  
       grid-area: section;
@@ -130,6 +145,7 @@ body{
       font-size: 70px;
       margin-top: 5px;
       margin-left: 5px;
+      color: #0B0D56;
   }
   .Contenedor__Generos{
       width: 100%;
