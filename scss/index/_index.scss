@@ -1,0 +1,50 @@
+.Contenido {
+    width: $anchocompleto;
+    grid-area: section;
+
+    .titulo_catalago {
+        display: flex;
+        justify-content: center;
+        background-color: $color-rosa;
+        color: $color-azul;
+        font-weight: bolder;
+    }
+
+    .cards__index {
+        margin-top: 3rem;
+        margin-left: $minimaseparacion;
+       /* margin-right: $minimaseparacion;*/
+        margin-bottom: 3rem;
+
+        .card {
+            margin-right: $minimaseparacion;
+
+            img {
+                width: $anchocompleto;
+                height: 10rem;
+            }
+
+            .card-body {
+                background-color: #6a6a6a;
+            }
+
+            .card-footer {
+                width: $anchocompleto;
+                background-color:$color-azul;
+            }
+
+            .card__link {
+                text-decoration: none;
+                color: $color-rosa;
+            }
+
+        }
+    }
+    .carrusel{
+        margin-bottom: 15rem;
+      }
+      .carousel-item img{
+        height: 30rem;
+        
+      }
+}

@@ -1,0 +1,21 @@
+.Menu{
+    width: $anchocompleto;
+    height:6rem;
+    grid-area: header;
+    
+    .titulo_nav {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+      }
+      .titulo_nav img {
+        height: 52px;
+        color: $color-azul;
+      }
+      .titulo__index {
+        font-size: 40px;
+        color:$color-blanco;
+      }
+
+}

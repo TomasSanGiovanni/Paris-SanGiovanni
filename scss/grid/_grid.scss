@@ -1,0 +1,14 @@
+.Grid{
+    display:grid;
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "footer footer footer";
+    grid-template-rows:0.2fr 2.7fr 0.1fr ;
+    grid-template-columns: auto  auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    gap:20px 10px;
+    min-height: 100vh;
+    
+    }
