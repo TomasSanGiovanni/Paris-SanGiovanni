@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0; 
+    box-sizing: content-box;   
+    box-sizing: border-box;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../imagen/descarga3.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Josefin Sans', sans-serif;
+  
+  /*background-image:linear-gradient(to top,rgba(0, 0, 0, 0.925) 0,rgba(0,0,0,0) 60%,rgba(0, 0, 0, 0.925) 100%);
+*/
+}
+.Grid{
+  display:grid;
+  grid-template-areas: 
+  "header header header"
+  "section section section"
+  "footer footer footer";
+  grid-template-rows:0.2fr 2.7fr 0.1fr ;
+  grid-template-columns: auto  auto auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  gap:20px 10px;
+  min-height: 100vh;
+  
+  }
+  .Menu{  
+      width: 100%;
+      height:6rem;
+      grid-area: header;
+      background: rgb(0,0,0,0.4);
+    }
+    .titulo_nav{
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    .titulo_nav img{
+      height: 52px;
+      color: #0B0D56;
+    }
+      .titulo__index{
+        font-size: 40px;
+        color:aliceblue
+      }
+    .Contenido{
+      width: 100%;
+      grid-area: section;
+    }
+    .titulo_Principal{
+      color:#0B0D56;
+      display: flex;
+      justify-content: start;
+    }
+    .carrusel{
+      margin-bottom: 15rem;
+    }
+
+    .carousel-item img{
+      height: 30rem;
+      
+    }
+    .titulo_catalago{
+      
+      display: flex;
+      justify-content: center;
+      background-color: #d491a1;
+      color:#0B0D56;
+      font-weight: bolder;
+    }
+    .cards__index{
+    margin-top: 3rem;
+     margin-left: 1rem;
+     margin-right: 1rem;
+     margin-bottom: 3rem;
+    }
+    
+    .card{
+     margin-right: 1rem;
+     
+    }
+    .card img{
+      width: 100%;
+      height: 10rem;
+    }
+    .card-body{
+      background-color:#6a6a6a;
+    }
+    .card-footer{
+      width: 100%;
+      background-color: #0B0D56;
+    }
+   .card__link{
+    text-decoration: none;
+    color: #d491a1;
+   
+   }
+    .section_Generos{
+ 
+      grid-area: section;
+      display:flex;
+      flex-direction: column;    
+  }
+  .Titulo__Secciones{
+      width: 100%;
+      display: flex;
+      font-size: 30px;
+      background-color:#0B0D56;
+      color: #d491a1;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .Contenedor__Generos{
+      width: 100%;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
+  }
+  .Card__Generos{
+      width:320px;
+      height: 600px;
+      border-radius: 8px;
+      background-color:#0B0D56;
+      box-shadow: 0px 2px 2px rgb(0, 0,0,0,2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 20px;
+      /*cursor:default;*/
+      text-align: center;
+      transition: all 0.25s;
+  }
+  .Card__Generos:hover{
+      box-shadow: 5px 5px 20px rgb(0,0,0,0.4);
+      transform: translateY(-3%);
+  
+  }
+  .Card__Generos{
+      text-align: center;
+      padding: 2px;
+  
+  }
+  .Card__Generos img{
+      width: 300px;
+      height:300px;
+  }
+  .Card__Generos h3{
+      font-size: 23px;
+      font-weight: bolder;
+      color: #d491a1;
+  
+  }
+  .Card__Generos p{
+      font-size: 20px;
+      color: #6a6a6a;
+      margin-top: 20px;      
+      font-weight: bolder;
+      overflow: hidden;
+      
+  }
+  .Contenedor__Card__carrito{
+      text-decoration: none;
+      font-size: 25px;  
+      background-color: rgba(241, 171, 195, 0);
+      color:#d491a1;
+      padding: 15px;
+      justify-content: center;
+    
+  }
+  .Contenedor__Formulario{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+   
+  }
+  .Card__CompraOnline{
+    width: 800px;
+    height: 600px;
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgb(0,0,0,0.4);
+    border-radius: 8px;
+    margin-left: 20px;
+    justify-content: center;
+  }
+  .Caja__Formulario{
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+  }
+  .Contenedor__Formulario__Texto{
+    font-size: 30px;
+    color: #d491a1;
+    font-weight: bolder;
+    text-align: justify;
+    margin-top: 10px;
+    padding-top: 10px;
+
+  }
+  
+  .Contenedor__Formulario__Caja{
+    width: 98%;
+    height: 300px;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color:#d491a1 ;
+    background-color: #0B0D56;
+  }
+  
+  
+  .Contenedor__Formulario__Ingresos{
+    font-size: 20px;
+    padding: 5px;
+    color: #d491a1;
+    background-color: #0B0D56;
+  }
+    .footer{
+      grid-area: footer;
+      background: rgb(0,0,0,0.4);
+      width: 100%;
+     /* background:rgba(0,0,0,0.6);
+      box-shadow: 0px 2px 2px rgb(0, 0,0,0,2);
+      height:200px;*/
+  }
+  
+@media screen and (max-width:768px){
+.Menu{
+  width: 100%;
+  height: 20rem;
+}
+.Menu_Logo_Cont{
+  text-align: center;
+  font-size: 15px;
+}
+.Menu__Link{
+display: block;
+width: 10rem;
+text-align: center;
+font-size: 15px;
+padding: 1px;
+}
+.Titulo__Secciones{
+  font-size: 2rem;
+}
+.Card__Generos{
+  width: 200px; 
+  height: 310px;
+  margin: 4px;
+  justify-content: space-evenly;
+}
+.Card__Generos h3{
+  font-size: 12px;
+}
+.Card__Generos img{
+  width: 55%;
+  height: 120px;
+}
+.Card__Generos p{
+  font-size: 12px;
+}
+.Contenedor__Card__carrito{
+  font-size: 12px;
+}
+.Card__CompraOnline{
+  width: 400px;
+  height: 400;
+}
+.Contenedor__Formulario__Texto{
+  font-size: 18px;
+  
+}
+.Contenedor__Formulario__Ingresos{
+  font-size: 12px;
+}
+}
