@@ -11,11 +11,11 @@
       }
       .titulo_nav img {
         height: 52px;
-        color: $color-azul;
+        color: map-get($Paleta, azul);
       }
       .titulo__index {
         font-size: 40px;
-        color:$color-blanco;
+        color:map-get($Paleta, blanco);
       }
 
 }

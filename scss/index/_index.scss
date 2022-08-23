@@ -3,17 +3,15 @@
     grid-area: section;
 
     .titulo_catalago {
-        display: flex;
-        justify-content: center;
-        background-color: $color-rosa;
-        color: $color-azul;
+        @include flex-centrado;
+        background-color: map-get($Paleta, rosa);
+        color: map-get($Paleta, azul);
         font-weight: bolder;
     }
 
     .cards__index {
         margin-top: 3rem;
         margin-left: $minimaseparacion;
-       /* margin-right: $minimaseparacion;*/
         margin-bottom: 3rem;
 
         .card {
@@ -25,17 +23,17 @@
             }
 
             .card-body {
-                background-color: #6a6a6a;
+               background-color: map-get($Paleta, gris );
             }
 
             .card-footer {
                 width: $anchocompleto;
-                background-color:$color-azul;
+               /* background-color: map-get($Paleta, azul);*/
             }
 
             .card__link {
                 text-decoration: none;
-                color: $color-rosa;
+                color: map-get($Paleta, rosa);
             }
 
         }

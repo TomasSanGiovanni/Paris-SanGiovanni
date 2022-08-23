@@ -1,4 +1,3 @@
-/*colores*/
 /*medidas*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 * {
@@ -55,6 +54,7 @@ body {
 .Contenido .titulo_catalago {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #d491a1;
   color: #0B0D56;
   font-weight: bolder;
@@ -62,7 +62,6 @@ body {
 .Contenido .cards__index {
   margin-top: 3rem;
   margin-left: 1rem;
-  /* margin-right: $minimaseparacion;*/
   margin-bottom: 3rem;
 }
 .Contenido .cards__index .card {
@@ -77,7 +76,7 @@ body {
 }
 .Contenido .cards__index .card .card-footer {
   width: 100%;
-  background-color: #0B0D56;
+  /* background-color: map-get($Paleta, azul);*/
 }
 .Contenido .cards__index .card .card__link {
   text-decoration: none;
@@ -90,9 +89,165 @@ body {
   height: 30rem;
 }
 
+.section_Generos {
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+}
+.section_Generos .Titulo__Secciones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: #0B0D56;
+  color: #d491a1;
+}
+.section_Generos .Contenedor__Generos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+.section_Generos .Contenedor__Generos .Card__Generos {
+  width: 320px;
+  height: 600px;
+  border-radius: 8px;
+  background-color: #0B0D56;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  transition: all 0.25s;
+}
+.section_Generos .Contenedor__Generos .Card__Generos :hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.section_Generos .Contenedor__Generos .Card__Generos img {
+  width: 300px;
+  height: 300px;
+}
+.section_Generos .Contenedor__Generos .Card__Generos h3 {
+  font-size: 23px;
+  font-weight: bolder;
+  color: #d491a1;
+}
+.section_Generos .Contenedor__Generos .Card__Generos p {
+  font-size: 20px;
+  color: #6a6a6a;
+  margin-top: 20px;
+  font-weight: bolder;
+  overflow: hidden;
+}
+.section_Generos .Contenedor__Generos .Card__Generos .Contenedor__Card__carrito {
+  text-decoration: none;
+  font-size: 25px;
+  background-color: rgba(241, 171, 195, 0);
+  color: #d491a1;
+  padding: 15px;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.Contenedor__Formulario {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.Contenedor__Formulario .Card__CompraOnline {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  margin-left: 20px;
+}
+.Contenedor__Formulario .Card__CompraOnline .Caja__Formulario {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: justify;
+}
+.Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Texto {
+  font-size: 30px;
+  color: #d491a1;
+  font-weight: bolder;
+  text-align: justify;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Caja {
+  width: 100%;
+  height: 300px;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #d491a1;
+  background-color: #0B0D56;
+}
+.Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Ingresos {
+  font-size: 20px;
+  padding: 5px;
+  color: #d491a1;
+  background-color: #0B0D56;
+}
+
 .footer {
   grid-area: footer;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .Menu {
+    width: 100%;
+    height: 10rem;
+  }
+  .Titulo__Secciones {
+    font-size: 2rem;
+  }
+  .Card__Generos {
+    width: 200px;
+    height: 310px;
+    margin: 4px;
+    justify-content: space-evenly;
+  }
+  .Card__Generos h3 {
+    font-size: 12px;
+  }
+  .Card__Generos img {
+    width: 55%;
+    height: 120px;
+  }
+  .Card__Generos p {
+    font-size: 12px;
+  }
+  .Card__Generos .Contenedor__Card__carrito {
+    font-size: 12px;
+  }
+  .Card__CompraOnline {
+    width: 400px;
+    height: 400;
+  }
+  .Card__CompraOnline .Contenedor__Formulario__Texto {
+    font-size: 18px;
+  }
+  .Card__CompraOnline .Contenedor__Formulario__Ingresos {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,64 @@
+.section_Generos{
+    grid-area: section;
+    display:flex;
+    flex-direction: column; 
+    .Titulo__Secciones{
+        width: 100%;
+        @include flex-centrado;
+        font-size: 30px;
+        background-color:map-get($Paleta, azul );
+        color: map-get($Paleta, rosa);
+        
+        
+    }
+    .Contenedor__Generos{
+        width: 100%;
+        @include flex-evenly;
+        flex-wrap: wrap;
+        padding: 2px;
+        .Card__Generos{
+            width:320px;
+            height: 600px;
+            border-radius: 8px;
+            background-color:map-get($Paleta, azul );
+            flex-direction: column;
+            @include flex-evenly;
+            margin: 20px;
+            transition: all 0.25s;
+            :hover{
+                box-shadow: 5px 5px 20px rgb(0,0,0,0.4);
+                transform: translateY(-3%);
+            }
+            img{
+                width: 300px;
+                height:300px;
+            }
+            h3{
+                font-size: 23px;
+                font-weight: bolder;
+                color: map-get($Paleta, rosa);
+            
+            }
+            p{
+                font-size: 20px;
+                color: map-get($Paleta, gris);
+                margin-top: 20px;      
+                font-weight: bolder;
+                overflow: hidden;
+                
+            }
+            .Contenedor__Card__carrito{
+                text-decoration: none;
+                font-size: 25px;  
+                background-color: rgba(241, 171, 195, 0);
+                color:map-get($Paleta , rosa );
+                padding: 15px;
+                justify-content: center;
+                margin: 1rem;
+              
+            }
+
+        }
+
+    }
+}
