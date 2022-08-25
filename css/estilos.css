@@ -167,7 +167,7 @@ body {
 }
 .Contenedor__Formulario .Card__CompraOnline {
   width: 100%;
-  height: 600px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,7 +210,6 @@ body {
 .footer {
   grid-area: footer;
   width: 100%;
-  margin-top: 8rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -240,15 +239,15 @@ body {
   .Card__Generos .Contenedor__Card__carrito {
     font-size: 12px;
   }
-  .Card__CompraOnline {
+  .Contenedor__Formulario .Card__CompraOnline {
     width: 400px;
-    height: 400;
+    height: 550px;
   }
-  .Card__CompraOnline .Contenedor__Formulario__Texto {
-    font-size: 18px;
-  }
-  .Card__CompraOnline .Contenedor__Formulario__Ingresos {
+  .Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Texto {
     font-size: 12px;
+  }
+  .Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Ingresos {
+    font-size: 8PX;
   }
 }
 

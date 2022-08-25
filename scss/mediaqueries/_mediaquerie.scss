@@ -27,16 +27,21 @@
       }
     }
     
-    .Card__CompraOnline{
-      width: 400px;
-      height: 400;
-      .Contenedor__Formulario__Texto{
-        font-size: 18px;
-        
+    
+     
+      .Contenedor__Formulario .Card__CompraOnline {
+        width: 400px;
+        height: 550px;
       }
-      .Contenedor__Formulario__Ingresos{
+      .Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Texto {
         font-size: 12px;
+      
+      
+      }
+      .Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Ingresos {
+        font-size: 8PX;
+       
       }
     }
-   
-    }
+    
+    
