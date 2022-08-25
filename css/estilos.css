@@ -19,7 +19,7 @@ body {
 .Grid {
   display: grid;
   grid-template-areas: "header header header" "section section section" "footer footer footer";
-  grid-template-rows: 0.2fr 2.7fr 0.1fr;
+  grid-template-rows: 0.2fr 2.6fr 0.2fr;
   grid-template-columns: auto auto auto;
   row-gap: 10px;
   column-gap: 10px;
@@ -92,6 +92,7 @@ body {
 .section_Generos {
   grid-area: section;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
 }
 .section_Generos .Titulo__Secciones {
@@ -209,6 +210,7 @@ body {
 .footer {
   grid-area: footer;
   width: 100%;
+  margin-top: 8rem;
 }
 
 @media screen and (max-width: 768px) {

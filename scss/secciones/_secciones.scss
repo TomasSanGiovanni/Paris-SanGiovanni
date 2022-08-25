@@ -1,7 +1,9 @@
 .section_Generos{
     grid-area: section;
     display:flex;
+    min-height: 100vh;
     flex-direction: column; 
+
     .Titulo__Secciones{
         width: 100%;
         @include flex-centrado;
