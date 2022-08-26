@@ -5,8 +5,10 @@
     }
     
     .Titulo__Secciones{
-      font-size: 2rem;
-    }
+      position: relative;
+      bottom: 50px;
+     
+      }
     .Card__Generos{
       width: 200px; 
       height: 310px;
@@ -44,4 +46,4 @@
       }
     }
     
-    
+  

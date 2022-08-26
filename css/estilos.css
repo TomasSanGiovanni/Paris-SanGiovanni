@@ -1,5 +1,44 @@
 /*medidas*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@media screen and (max-width: 768px) {
+  .Menu {
+    width: 100%;
+    height: 10rem;
+  }
+  .Titulo__Secciones {
+    position: relative;
+    bottom: 50px;
+  }
+  .Card__Generos {
+    width: 200px;
+    height: 310px;
+    margin: 4px;
+    justify-content: space-evenly;
+  }
+  .Card__Generos h3 {
+    font-size: 12px;
+  }
+  .Card__Generos img {
+    width: 55%;
+    height: 120px;
+  }
+  .Card__Generos p {
+    font-size: 12px;
+  }
+  .Card__Generos .Contenedor__Card__carrito {
+    font-size: 12px;
+  }
+  .Contenedor__Formulario .Card__CompraOnline {
+    width: 400px;
+    height: 550px;
+  }
+  .Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Texto {
+    font-size: 12px;
+  }
+  .Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Ingresos {
+    font-size: 8PX;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +90,11 @@ body {
   width: 100%;
   grid-area: section;
 }
-.Contenido .titulo_catalago {
+.Contenido .titulo__index {
+  position: relative;
+  bottom: 5px;
+}
+.Contenido .titulo__index .titulo_catalago {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,6 +140,10 @@ body {
 }
 .section_Generos .Titulo__Secciones {
   width: 100%;
+  position: relative;
+  bottom: 10px;
+}
+.section_Generos .Titulo__Secciones .Titulo__Secciones__Contenido {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,45 +257,6 @@ body {
 .footer {
   grid-area: footer;
   width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .Menu {
-    width: 100%;
-    height: 10rem;
-  }
-  .Titulo__Secciones {
-    font-size: 2rem;
-  }
-  .Card__Generos {
-    width: 200px;
-    height: 310px;
-    margin: 4px;
-    justify-content: space-evenly;
-  }
-  .Card__Generos h3 {
-    font-size: 12px;
-  }
-  .Card__Generos img {
-    width: 55%;
-    height: 120px;
-  }
-  .Card__Generos p {
-    font-size: 12px;
-  }
-  .Card__Generos .Contenedor__Card__carrito {
-    font-size: 12px;
-  }
-  .Contenedor__Formulario .Card__CompraOnline {
-    width: 400px;
-    height: 550px;
-  }
-  .Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Texto {
-    font-size: 12px;
-  }
-  .Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Ingresos {
-    font-size: 8PX;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,14 +1,16 @@
 .Contenido {
     width: $anchocompleto;
     grid-area: section;
-
+    .titulo__index{
+        position: relative;
+        bottom: 5px;
     .titulo_catalago {
         @include flex-centrado;
         background-color: map-get($Paleta, rosa);
         color: map-get($Paleta, azul);
         font-weight: bolder;
     }
-
+    }
     .cards__index {
         margin-top: 3rem;
         margin-left: $minimaseparacion;
