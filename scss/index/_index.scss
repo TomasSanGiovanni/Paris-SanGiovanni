@@ -15,7 +15,7 @@
         margin-top: 3rem;
         margin-left: $minimaseparacion;
         margin-bottom: 3rem;
-
+       
         .card {
             margin-right: $minimaseparacion;
 
@@ -45,6 +45,6 @@
       }
       .carousel-item img{
         height: 30rem;
-        
+        overflow: hidden;
       }
 }

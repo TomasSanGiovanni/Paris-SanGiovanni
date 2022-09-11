@@ -1,44 +1,5 @@
 /*medidas*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-@media screen and (max-width: 768px) {
-  .Menu {
-    width: 100%;
-    height: 10rem;
-  }
-  .Titulo__Secciones {
-    position: relative;
-    bottom: 50px;
-  }
-  .Card__Generos {
-    width: 200px;
-    height: 310px;
-    margin: 4px;
-    justify-content: space-evenly;
-  }
-  .Card__Generos h3 {
-    font-size: 12px;
-  }
-  .Card__Generos img {
-    width: 55%;
-    height: 120px;
-  }
-  .Card__Generos p {
-    font-size: 12px;
-  }
-  .Card__Generos .Contenedor__Card__carrito {
-    font-size: 12px;
-  }
-  .Contenedor__Formulario .Card__CompraOnline {
-    width: 400px;
-    height: 550px;
-  }
-  .Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Texto {
-    font-size: 12px;
-  }
-  .Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Ingresos {
-    font-size: 8PX;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -48,6 +9,8 @@
 
 body {
   width: 100%;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-image: url("../imagen/descarga3.jpg");
   background-size: cover;
@@ -130,6 +93,7 @@ body {
 }
 .Contenido .carousel-item img {
   height: 30rem;
+  overflow: hidden;
 }
 
 .section_Generos {
@@ -178,6 +142,7 @@ body {
   transform: translateY(-3%);
 }
 .section_Generos .Contenedor__Generos .Card__Generos img {
+  padding-top: 10px;
   width: 300px;
   height: 300px;
 }
@@ -204,59 +169,81 @@ body {
 }
 
 .Contenedor__Formulario {
+  grid-area: section;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
 }
-.Contenedor__Formulario .Card__CompraOnline {
+.Contenedor__Formulario .Titulo__Secciones__Compras {
   width: 100%;
-  height: 700px;
+  position: relative;
+  bottom: 5px;
+}
+.Contenedor__Formulario .Titulo__Secciones__Compras .Titulo__Secciones__Contenido__Compras {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
-  margin-left: 20px;
-}
-.Contenedor__Formulario .Card__CompraOnline .Caja__Formulario {
-  width: 100%;
-  padding-top: 10px;
-  padding-left: 10px;
-  text-align: justify;
-}
-.Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Texto {
   font-size: 30px;
-  color: #d491a1;
-  font-weight: bolder;
-  text-align: justify;
-  margin-top: 10px;
-  padding-top: 10px;
-}
-.Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Caja {
-  width: 100%;
-  height: 300px;
-  font-size: 30px;
-  padding-left: 10px;
-  padding-top: 10px;
-  color: #d491a1;
   background-color: #0B0D56;
-}
-.Contenedor__Formulario .Card__CompraOnline .Caja__Formulario .Contenedor__Formulario__Ingresos {
-  font-size: 20px;
-  padding: 5px;
   color: #d491a1;
-  background-color: #0B0D56;
+}
+.Contenedor__Formulario .Contenido__Formulario {
+  margin-top: 10rem;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.Contenedor__Formulario .Contenido__Formulario .Contenido__Formulario__Ingresos {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 20px;
+  color: #d491a1;
+}
+.Contenedor__Formulario .Contenido__Formulario .Boton_formulario {
+  padding: auto;
 }
 
 .footer {
   grid-area: footer;
   width: 100%;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .Grid {
+    grid-template-rows: 0.1fr 2.8fr 0.1fr;
+    grid-template-columns: auto auto auto;
+  }
+  .Menu {
+    width: 100%;
+    height: 4rem;
+  }
+  .Menu .titulo_nav {
+    padding-bottom: 12px;
+    margin: auto;
+  }
+  .Menu .titulo_nav img {
+    padding-bottom: 20px;
+  }
+  .Menu .titulo__index {
+    font-size: 30px;
+  }
+  .titulo__index {
+    position: absolute;
+    top: 35px;
+    padding-bottom: 2rem;
+  }
+  .card {
+    width: 80%;
+    margin-left: 50px;
+  }
+  .Titulo__Secciones {
+    position: absolute;
+    top: 8px;
+  }
+  .Titulo__Secciones__Compras {
+    position: absolute;
+    top: 32px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
